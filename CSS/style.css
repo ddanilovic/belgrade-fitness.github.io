@@ -1,0 +1,695 @@
+/* Universal Reset */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*::selection {
+  background-color: #44C184;
+}
+
+/* Link CSS */
+
+a:link {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+}
+
+/* Main CSS */
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  line-height: 1.5;
+  position: relative;
+}
+
+h1 {
+  font-family: audiowide;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 1.7em;
+  margin: 10px 0;
+}
+
+/* Header CSS */
+
+nav {
+  background-color: #232A3B;
+  color: #fff;
+  font-size: 1.4em;
+  padding: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+nav li {
+  list-style-type: none;
+  padding: 5px;
+}
+
+header p {
+  background: #232A3B url("../images/header.jpg") no-repeat center;
+  background-size: cover;
+  color: #fff;
+  height: 300px;
+  font-family: audiowide;
+  font-size: 2.2em;
+  padding: 100px 50px;
+  text-align: center;
+}
+
+/* Call to Action CSS */
+
+.call-to-action {
+  align-items: center;
+  background: #333333;
+  color: #fff;
+  display: flex;
+  height: 80px;
+  justify-content: center;
+}
+
+.call-to-action h2 {
+  text-transform: capitalize;
+}
+
+.call-to-action p {
+  align-self: center;
+  background-color: #44C184;
+  border-radius: 2px;
+  margin-left: 20px;
+  padding: 5px 10px;
+  transition: margin-top .5s;
+}
+
+.call-to-action p:hover {
+  margin-top: -7px;
+  transition: margin-top .5s;
+}
+
+/* Container CSS */
+
+.container {
+  margin: 0 auto 50px;
+  text-align: center;
+  width: 90%;
+}
+
+/*Section 1 CSS */
+
+.section-1 {
+  margin-top: 50px;
+}
+
+.line {
+  border-bottom: 1px #333333 solid;
+  color: #fff;
+}
+
+.section-title-content {
+  margin-top: 30px;
+}
+
+/*Section 2 CSS */
+
+.section-2 {
+  background-color: #c0c5ce;
+  padding: 40px 0 20px;
+}
+
+.section-2-title, .section-2-content {
+  color: #fff;
+}
+
+.section-2-content {
+  margin-bottom: 20px;
+}
+
+.line-2 {
+  color: #c0c5ce;
+  border-bottom: 1px solid #fff;
+}
+
+.section-2 .item-1, .section-2 .item-2, .section-2 .item-3 {
+  margin-top: 10px;
+  transition: transform .3s;
+}
+
+.section-2 .item-1:hover, .section-2 .item-2:hover, .section-2 .item-3:hover {
+  transform: scale(1.05);
+  transition: transform .3s;
+}
+
+.pricing-title, .pricing-title-big {
+  color: #fff;
+  background-color: #343d46;
+  font-size: 1.2em;
+  padding: 10px;
+  transition: background-color .5s;
+}
+
+.pricing-title:hover {
+  background-color: #44C184;
+  transition: background-color .5s;
+}
+
+.pricing-title-big {
+  background-color: #44C184;
+  font-size: 1.4rem;
+}
+
+.pricing-content {
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, .3);
+  padding: 10px;
+}
+
+.sign-up-container {
+  color: #44C184;
+  padding: 20px;
+}
+
+.sign-up {
+  border: 1px solid #44C184;
+  border-radius: 5px;
+  padding: 10px 100px;
+  transition: background-color .5s, color .5s;
+}
+
+.sign-up:hover {
+  background-color: #44C184;
+  color: #fff;
+  transition: background-color .5s, color .5s;
+}
+
+/* Contact Form CSS */
+
+.input {
+  border: 1px solid rgba(0, 0, 0, .3);
+  border-radius: 2px;
+  display: block;
+  margin: 10px;
+  padding: 5px;
+  text-shadow: 0;
+  width: 100%;
+}
+
+.section-3 {
+  padding-top: 30px;
+}
+
+.section-3 .item-2 {
+  margin-left: -10px;
+}
+
+.contact-button {
+  border: 1px solid #44C184;
+  margin-left: 10px;
+  padding: 10px;
+  transition: background-color .5s, color .5s;
+  width: 100%;
+}
+
+.contact-button:hover {
+  background-color: #44C184;
+  color: #fff;
+  transition: background-color .5s, color .5s;
+}
+
+/* Footer CSS */
+
+.main-footer {
+  background-color: #232A3B;
+  color: #fff;
+  padding: 40px;
+  text-align: center;
+}
+
+.main-footer p {
+  margin-bottom: 10px;
+}
+
+.social-icon {
+  font-size: 1.2em;
+  margin-bottom: 40px;
+  margin-right: 10px;
+  transition: color .5s;
+}
+
+.social-icon:hover {
+  color: #44C184;
+  transition: color .5s;
+}
+
+.contact-icon {
+  margin-right: 10px;
+}
+
+.contact-info {
+  line-height: 0;
+}
+
+.hello {
+  color: #44C184;
+  font-size: 1.4em;
+  font-weight: 600;
+}
+
+/* Sign Up Form CSS */
+
+.join-now-container {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.sign-up-form {
+  color: #000;
+  margin: 50px 0;
+  text-align: left;
+}
+
+.sign-up-form h2 {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+fieldset {
+  border: none;
+}
+
+legend {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+input[type="text"], input[type="email"], input[type="password"], textarea, select {
+  background-color: rgba(227, 228, 230, 0.2);
+  border: 1px solid rgba(0, 0, 0, .2);
+  margin: 20px 0;
+  padding: 10px;
+  width: 100%;
+}
+
+.number {
+  background-color: #44C184;
+  border-radius: 50%;
+  color: #fff;
+  margin: 20px 10px 0 0;
+  padding: 10px 16px;
+}
+
+.block-label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="radio"], input[type="checkbox"] {
+  margin: 0 10px;
+}
+
+button {
+  background-color: #fff;
+  border: 1px solid #44C184;
+  color: #44C184;
+  cursor: pointer;
+  margin-top: 40px;
+  padding: 15px;
+  width: 100%;
+}
+
+/* Gyms CSS */
+
+.gyms-title {
+  font-size: 1.8em;
+  margin-top: 2em;
+}
+
+.gyms-container img {
+  height: 300px;
+  max-width: 100%;
+}
+
+.gyms-item-1, .gyms-item-2, .gyms-item-3 {
+  margin: 50px 0;
+  transition: transform .5s;
+}
+
+.gyms-item-1:hover, .gyms-item-2:hover, .gyms-item-3:hover {
+  transform: scale(1.05);
+  transition: transform .5s;
+}
+
+.gyms-content {
+  background-color: #353839;
+  color: #fff;
+  margin: -7px auto 0;
+  padding: 15px;
+  max-width: 397px;
+}
+
+.gyms-content h3 {
+  margin-top: 0;
+}
+
+/* Trainer Page CSS */
+
+.trainer-container {
+  background: #fff url("../images/training-background.jpg") no-repeat center;
+  background-size: cover;
+  padding: 5%;
+}
+
+.trainer-container section {
+  transition: transform .5s;
+}
+
+.trainer-container section:hover {
+  transform: scale(1.05);
+  transition: transform .5s;
+}
+
+.trainer-container h2 {
+  color: #fff;
+  margin-bottom: 5%;
+  text-align: center;
+}
+
+.trainer-profile {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin: 0 auto 50px;
+  width: 70%;
+}
+
+.trainer-profile img {
+  max-width: 100%;
+}
+
+.trainer-profile-content {
+  background-color: #fff;
+  padding: 5%;
+  text-align: center;
+}
+
+/* Other CSS */
+
+.title-color, .fas {
+  color: #44C184;
+}
+
+.fas {
+  margin-top: 40px;
+}
+
+.back-to-top {
+  background-color: #232A3B;
+  border-radius: 50%;
+  bottom: 30px;
+  height: 40px;
+  padding: 6px 17px;
+  position: fixed;
+  right: 30px;
+  width: 40px;
+}
+
+.back-to-top i {
+  margin-left: -3px;
+  margin-top: -0px;
+  transition: background-color .5s, border .5s;
+}
+
+.back-to-top:hover {
+  background-color: #fff;
+  border: 1px solid #232A3B;
+  transition: background-color .5s, border .5s;
+}
+
+/* Animation CSS */
+
+.fade-in {
+  animation-name: fade-in;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+#delay-1 {
+  animation-delay: 200ms !important;
+}
+
+#delay-2 {
+  animation-delay: 400ms !important;
+}
+
+#delay-3 {
+  animation-delay: 600ms !important;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Media Queries */
+
+@media only screen and (min-width: 769px) {
+  /* Header CSS */
+  .main-header nav, .main-header ul {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1em;
+  }
+  .main-header nav {
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  .main-header ul {
+    margin-right: 10%;
+  }
+  .main-header h1 {
+    align-self: center;
+    margin: 0 auto 0 10%;
+  }
+  .main-header li {
+    margin-right: 30px;
+  }
+  /* Container CSS */
+  .container {
+    width: 80%;
+  }
+  .flex-container {
+    display: flex;
+  }
+  /* Section 1 */
+  .item-1, .item-2, .item-3 {
+    flex-grow: 1;
+  }
+  .section-1 .item-2 {
+    margin: 0 20px;
+  }
+  /* Section 2 CSS */
+  .section-2 .item-2 {
+    margin: 0 20px;
+  }
+  .sign-up {
+    padding: 10px 50px;
+  }
+  /* Section 3 CSS */
+  .section-3 .item-2 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+  }
+  .section-3 .item-2 .input {
+    flex-grow: 0.7;
+    margin-top: 20px;
+  }
+  /* Main Footer CSS */
+  .main-footer {
+    text-align: left;
+  }
+  .main-footer .item-1, .main-footer .item-2 {
+    flex: 1;
+  }
+  .main-footer .item-1 {
+    flex: 2 40%;
+  }
+  .copyright {
+    text-align: center;
+  }
+  /* Sign Up Form */
+  .join-now-container {
+    width: 70%;
+  }
+  /* Gyms CSS */
+  .gyms-title {
+    font-size: 2em;
+  }
+  .gyms-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .gyms-item-1, .gyms-item-2, .gyms-item-3, {
+    flex-grow: 1;
+  }
+  /* Trainers Page CSS */
+  .trainer-profile {
+    flex-direction: row;
+  }
+  .trainer-profile img {
+    height: 250px;
+  }
+  .trainer-profile-content {
+    height: 250px;
+  }
+  .reverse {
+    flex-direction: row-reverse;
+  }
+}
+
+/* Mobile Landscape Mode CSS */
+
+@media only screen and (min-width: 500px) and (orientation: landscape) {
+  /* Header CSS */
+  .main-header nav, .main-header ul {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1em;
+  }
+  .main-header nav {
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  .main-header ul {
+    margin-right: 10%;
+  }
+  .main-header h1 {
+    align-self: center;
+    margin: 0 auto 0 10%;
+  }
+  .main-header li {
+    margin-right: 30px;
+  }
+  /* Container CSS */
+  .container {
+    width: 80%;
+  }
+  .flex-container {
+    display: flex;
+  }
+  /* Section 1 */
+  .item-1, .item-2, .item-3 {
+    flex-grow: 1;
+  }
+  .section-1 .item-2 {
+    margin: 0 20px;
+  }
+  /* Section 2 CSS */
+  .section-2 .item-2 {
+    margin: 0 20px;
+  }
+  /* Section 3 CSS */
+  .section-3 .item-2 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+  }
+  .section-3 .item-2 .input {
+    flex-grow: 0.7;
+    margin-top: 20px;
+  }
+  /* Main Footer CSS */
+  .main-footer {
+    text-align: left;
+  }
+  .main-footer .item-1, .main-footer .item-2 {
+    flex: 1;
+  }
+  .main-footer .item-1 {
+    flex: 2 40%;
+  }
+  .copyright {
+    text-align: center;
+  }
+  .contact-info {
+    line-height: 1.5;
+  }
+  /* Sign Up Form */
+  .join-now-container {
+    width: 70%;
+  }
+  /* Gyms CSS */
+  .gyms-title {
+    font-size: 2em;
+  }
+  .gyms-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .gyms-item-1, .gyms-item-2, .gyms-item-3, {
+    flex-grow: 1;
+  }
+  /* Trainers Page CSS */
+  .trainer-profile {
+    flex-direction: row;
+  }
+  .trainer-profile img {
+    height: 250px;
+  }
+  .trainer-profile-content {
+    height: 250px;
+  }
+  .reverse {
+    flex-direction: row-reverse;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .main-header p {
+    font-size: 3em;
+    padding: 20%;
+  }
+  .call-to-action h2 {
+    margin-right: 5%;
+  }
+  .call-to-action p {
+    font-size: 1.3em;
+    width: 100px;
+  }
+  .sign-up {
+    padding: 15px 150px;
+  }
+  /* Sign Up Form */
+  .join-now-container {
+    width: 40%;
+  }
+  /* Trainer CSS */
+  .trainer-profile {
+    width: 50%;
+  }
+  .trainer-profile-content {
+    padding-top: 8%;
+  }
+}
